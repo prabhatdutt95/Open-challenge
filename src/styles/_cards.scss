@@ -1,0 +1,67 @@
+.eligibitity-card {
+  z-index: 1;
+  border-radius: 10px;
+  .card-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+.loan-details {
+  z-index: 8;
+  .card {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+.card {
+  box-shadow: 0px 0px 30px #2321321f;
+}
+.eligibility-card-container {
+  margin-left: auto;
+}
+.features-section {
+  margin-top: 300px;
+  padding: 0 5% 0 8%;
+  z-index: 5;
+  .feature-title {
+    font-size: 36px;
+  }
+}
+.open-card {
+  padding: auto;
+  z-index: 9;
+}
+.feature-card-container {
+  margin: -200px 40px 30px 0px;
+}
+.feature-card {
+  box-shadow: 0px 0px 30px #2321321f;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 0px;
+  background-color: #ffffffb3;
+  cursor: pointer;
+  .feature-title {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 5px 0;
+  }
+  .feature-details {
+    font-size: 12px;
+    color: $gray-400;
+  }
+}
+.loan-ad {
+    font-size: 14px;
+    color: $gray-400;
+    margin: 20px 0 40px;
+}
+.feature-card:hover {
+    background-image: linear-gradient(#985DC0, #663595);
+    color: white;
+    opacity: 0.6;
+}

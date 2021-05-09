@@ -1,0 +1,88 @@
+<div class="d-flex">
+  <div class="bg-white border-0 card shadow-sm eligibitity-card w-100">
+    <div class="card-header border-0">Eligibility Calculator</div>
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1" class="font-size-sm mb-0"
+            >Monthly income</label
+          >
+          <div class="font-size-lg font-weight-bold">{{ incomeDetails.value | currency:'INR':'symbol':'2.0-0' }}</div>
+          <input
+            class="e-range"
+            type="range"
+            min="{{ incomeDetails.min }}"
+            max="{{ incomeDetails.max }}"
+            name="income"
+            [(ngModel)]="incomeDetails.value"
+          />
+          <div class="range-slider-params">
+            <div class="min">{{ incomeDetails.min | currency:'INR':'symbol':'2.0-0' }}</div>
+            <div class="max">{{ incomeDetails.max | currency:'INR':'symbol':'2.0-0' }}</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1" class="font-size-sm mb-0"
+            >Monthly expense</label
+          >
+          <div class="font-size-lg font-weight-bold">{{ expenseDetails.value | currency:'INR':'symbol':'2.0-0' }}</div>
+          <input
+            class="e-range"
+            type="range"
+            min="{{ expenseDetails.min }}"
+            max="{{ incomeDetails.value }}"
+            name="expense"
+            [(ngModel)]="expenseDetails.value"
+          />
+          <div class="range-slider-params">
+            <div class="min">{{ expenseDetails.min | currency:'INR':'symbol':'2.0-0' }}</div>
+            <div class="max">{{ incomeDetails.value | currency:'INR':'symbol':'2.0-0' }}</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1" class="font-size-sm mb-0"
+            >Repayment tenure</label
+          >
+          <select class="form-control-custom" id="exampleFormControlSelect1">
+            <option selected>6 months</option>
+            <option>12 months</option>
+            <option>24 months</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect2" class="font-size-sm mb-0"
+            >Do you have any existing loans?
+          </label>
+          <div class="float-right">
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="existingEMI" class="font-size-sm mb-0"
+            >EMI on existing loan (optional)</label
+          >
+          <input
+            type="number"
+            class="form-control-custom"
+            id="existingEMI"
+            placeholder="{{ '15000' | currency:'INR':'symbol':'2.0-0' }}"
+          />
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="align-self-center loan-details ml-1 w-50">
+    <div class="card bg-brand">
+      <div class="card-body text-light text-center px-1">
+        <div class="loan-text mt-4 font-size-sm">Loan Amount</div>
+        {{ "100000" | currency:'INR':'symbol':'2.0-0' }} <br />
+        <div class="font-size-sm loan-text mt-3">Your EMI available</div>
+        {{ "15000" | currency:'INR':'symbol':'2.0-0' }} <br />
+        <button class="btn btn-light font-size-sm mb-4 mt-4">GET MONEY</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+
+.nav-link {
+    font-size: 18px;
+    padding: 0 !important;
+}
+.navbar-brand {
+    img {
+        width: 80px;
+        padding-right: 20px;
+        transition: all 0.5s;
+    }
+}
+.nav-item {
+    padding: 0 10px;
+    a {
+        font-weight: 500;
+    }
+}
+.nav-link:hover {
+    color: $blue !important;
+    
+}
+.navbar {
+    top: 0;
+    position: fixed;
+    padding: 0 5%;
+    z-index: 9;
+    width: 100vw;
+}
+.navbar-scrolled {
+    background-color: white;
+    box-shadow: 0 0.5rem 1rem #00000026 !important;
+    padding-top: 0;
+    padding-bottom: 0;
+    .navbar-brand {
+        img {
+            transform: scale(0.9);
+        }
+    }
+}
