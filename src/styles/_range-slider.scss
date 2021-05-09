@@ -54,7 +54,7 @@ $lower-background: linear-gradient(to bottom, $lower-color, $lower-color) 100%
   width: $thumb-height;
   background: $thumb-color;
   border-radius: 100%;
-  border: 0;
+  border: 2px solid white;
   top: 50%;
   margin-top: (-$thumb-height/2);
   box-shadow: webkit-slider-thumb-shadow();
@@ -80,7 +80,7 @@ $lower-background: linear-gradient(to bottom, $lower-color, $lower-color) 100%
   width: $thumb-height;
   background: $thumb-color;
   border-radius: 100%;
-  border: 0;
+  border: 10px solid white;
   transition: background-color 150ms;
 }
 
@@ -132,6 +132,7 @@ $lower-background: linear-gradient(to bottom, $lower-color, $lower-color) 100%
 .range-slider-params {
   display: flex;
   font-size: x-small;
+  color: $gray-500;
   .max {
     margin-left: auto;
   }

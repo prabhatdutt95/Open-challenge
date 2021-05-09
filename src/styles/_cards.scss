@@ -5,12 +5,13 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
     text-align: center;
   }
 }
 .loan-details {
   z-index: 8;
+  font-size: large;
   .card {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
@@ -57,7 +58,7 @@
 }
 .loan-ad {
     font-size: 14px;
-    color: $gray-400;
+    color: $gray-500;
     margin: 20px 0 40px;
 }
 .feature-card:hover {

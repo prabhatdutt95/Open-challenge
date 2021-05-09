@@ -15,6 +15,7 @@ export class EligibilityFormComponent implements OnInit {
     value: 50000,
     min: 10000,
   };
+  existingEMI;
   constructor() {}
 
   ngOnInit(): void {}

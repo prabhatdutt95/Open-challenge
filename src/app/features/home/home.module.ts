@@ -6,12 +6,14 @@ import { HomeComponent } from './home/home.component';
 import { EligibilityFormComponent } from './eligibility-form/eligibility-form.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FeaturesComponent } from './features/features.component';
+import { DigitOnlyDirective } from 'src/app/shared/directives/number-only-directive'
 
 @NgModule({
   declarations: [
     HomeComponent,
     EligibilityFormComponent,
-    FeaturesComponent
+    FeaturesComponent,
+    DigitOnlyDirective
   ],
   imports: [
     CommonModule,
