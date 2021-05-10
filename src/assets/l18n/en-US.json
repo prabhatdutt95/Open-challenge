@@ -1,0 +1,42 @@
+{
+  "welcomeText": "We make it Super Simple",
+  "features": [
+    {
+      "title": "Quick cash disbursement",
+      "subTitle": "Get terms loans that your business needs within 72 hrs"
+    },
+    {
+      "title": "Low-interest rate",
+      "subTitle": "Get terms loans that your business needs within 72 hrs"
+    },
+    {
+      "title": "Zero Paperwork",
+      "subTitle": "Get started instantly by submitting only your basic details & bank statements"
+    },
+    {
+      "title": "Ace your business finances",
+      "subTitle": "Manage banking, accounting & everything in between, on one platform"
+    },
+    {
+      "title": "Loans to fight COVID-19",
+      "subTitle": "Zero EMI for first 3 months on Back-to-Business loans of upto 1 lakh"
+    }
+  ],
+  "boostBusinesswithOpen": "Boost your business with Open",
+  "customisedLoanAdd":"Get your hands on a term loan that’s crafted for your business",
+  "openAccountButtonText": "Get an Open Account",
+  "navBarProductText": "Products",
+  "navbarSolutionsText": "Solutions",
+  "navbarPricingText": "Pricing",
+  "navbarLoginButtonText": "Login",
+  "navbarGetStartedButtonText": "Get Started",
+  "eligibilityCardHeader": "Eligibility Calculator",
+  "monthlyIncomeLabel": "Monthly Income",
+  "monthlyExpenseLabel": "Monthly Expense",
+  "repaymentTenureLabel": "Repayment Tenure",
+  "existingLoansLabel": "Do you have any existing loans?",
+  "emiexistingLoansLabel": "EMI on existing loan (optional)",
+  "loanAmountLabel": "Loan Amount",
+  "availableEMILabel": "Your EMI available",
+  "monthsText": "months"
+}

@@ -1,4 +1,10 @@
-import { Component, OnInit } from "@angular/core";
+/**
+ * @author - Prabhat Dutt
+ * @description - This component contains Eligibility Calculator card section.
+ */
+
+import { Component, Inject, OnInit } from "@angular/core";
+import { L10N_LOCALE, L10nLocale } from "angular-l10n";
 
 @Component({
   selector: "app-eligibility-form",
@@ -16,7 +22,8 @@ export class EligibilityFormComponent implements OnInit {
     min: 10000,
   };
   existingEMI;
-  constructor() {}
+
+  constructor(@Inject(L10N_LOCALE) public locale: L10nLocale) {}
 
   ngOnInit(): void {}
 }

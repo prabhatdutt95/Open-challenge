@@ -14,25 +14,27 @@
       </div>
       <div class="align-self-center">
         <ng-container *ngFor="let feature of features; let i = index">
-            <div class="card feature-card" *ngIf="i > 2">
-              <div class="card-body">
-                <img class="" src="{{ feature.img }}" alt="feature image" />
-                <div class="feature-title">{{ feature.title }}</div>
-                <div class="feature-details">{{ feature.subTitle }}</div>
-              </div>
+          <div class="card feature-card" *ngIf="i > 2">
+            <div class="card-body">
+              <img class="" src="{{ feature.img }}" alt="feature image" />
+              <div class="feature-title">{{ feature.title }}</div>
+              <div class="feature-details">{{ feature.subTitle }}</div>
             </div>
-          </ng-container>
+          </div>
+        </ng-container>
       </div>
     </div>
   </div>
   <div class="col-12 col-md-4 open-card px-0">
-    <div class="feature-title">Boost your business with Open</div>
+    <div class="feature-title">
+      {{ "boostBusinesswithOpen" | translateAsync }}
+    </div>
     <div class="title-underline"></div>
     <div class="loan-ad">
-        Get your hands on a term loan that’s crafted for your business
+      {{ "customisedLoanAdd" | translateAsync }}
     </div>
     <button class="btn btn-outline-brand font-weight-bold">
-        Get an Open Account
+      {{ "openAccountButtonText" | translateAsync }}
     </button>
   </div>
 </section>

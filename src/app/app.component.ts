@@ -1,3 +1,7 @@
+/**
+ * @author - Prabhat Dutt
+ * @description - The generic component comprising of background elements, Navbar and Home Section. 
+ */
 import { Component } from '@angular/core';
 
 @Component({

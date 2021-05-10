@@ -1,13 +1,17 @@
 <div class="d-flex">
   <div class="bg-white border-0 card shadow-sm eligibitity-card w-100">
-    <div class="card-header border-0">Eligibility Calculator</div>
+    <div class="card-header border-0">
+      {{ "eligibilityCardHeader" | translateAsync }}
+    </div>
     <div class="card-body">
       <form>
         <div class="form-group">
-          <label for="exampleFormControlInput1" class="font-size-sm mb-0"
-            >Monthly Income</label
-          >
-          <div class="font-size-lg font-weight-bold">{{ incomeDetails.value | currency:'INR':'symbol':'2.0-0' }}</div>
+          <label for="exampleFormControlInput1" class="font-size-sm mb-0">{{
+            "monthlyIncomeLabel" | translateAsync
+          }}</label>
+          <div class="font-size-lg font-weight-bold">
+            {{ incomeDetails.value | currency: "INR":"symbol":"2.0-0" }}
+          </div>
           <input
             class="e-range"
             type="range"
@@ -17,15 +21,21 @@
             [(ngModel)]="incomeDetails.value"
           />
           <div class="range-slider-params">
-            <div class="min">{{ incomeDetails.min | currency:'INR':'symbol':'2.0-0' }}</div>
-            <div class="max">{{ incomeDetails.max | currency:'INR':'symbol':'2.0-0' }}</div>
+            <div class="min">
+              {{ incomeDetails.min | currency: "INR":"symbol":"2.0-0" }}
+            </div>
+            <div class="max">
+              {{ incomeDetails.max | currency: "INR":"symbol":"2.0-0" }}
+            </div>
           </div>
         </div>
         <div class="form-group">
-          <label for="exampleFormControlInput1" class="font-size-sm mb-0"
-            >Monthly Expense</label
-          >
-          <div class="font-size-lg font-weight-bold">{{ expenseDetails.value | currency:'INR':'symbol':'2.0-0' }}</div>
+          <label for="exampleFormControlInput1" class="font-size-sm mb-0">{{
+            "monthlyExpenseLabel" | translateAsync
+          }}</label>
+          <div class="font-size-lg font-weight-bold">
+            {{ expenseDetails.value | currency: "INR":"symbol":"2.0-0" }}
+          </div>
           <input
             class="e-range"
             type="range"
@@ -35,23 +45,27 @@
             [(ngModel)]="expenseDetails.value"
           />
           <div class="range-slider-params">
-            <div class="min">{{ expenseDetails.min | currency:'INR':'symbol':'2.0-0' }}</div>
-            <div class="max">{{ incomeDetails.value | currency:'INR':'symbol':'2.0-0' }}</div>
+            <div class="min">
+              {{ expenseDetails.min | currency: "INR":"symbol":"2.0-0" }}
+            </div>
+            <div class="max">
+              {{ incomeDetails.value | currency: "INR":"symbol":"2.0-0" }}
+            </div>
           </div>
         </div>
         <div class="form-group">
-          <label for="exampleFormControlSelect1" class="font-size-sm mb-0"
-            >Repayment Tenure</label
-          >
+          <label for="exampleFormControlSelect1" class="font-size-sm mb-0">{{
+            "repaymentTenureLabel" | translateAsync
+          }}</label>
           <select class="form-control-custom" id="exampleFormControlSelect1">
-            <option selected>6 months</option>
-            <option>12 months</option>
-            <option>24 months</option>
+            <option selected>6 {{ "monthsText" | translateAsync }}</option>
+            <option>12 {{ "monthsText" | translateAsync }}</option>
+            <option>24 {{ "monthsText" | translateAsync }}</option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlSelect2" class="font-size-sm mb-0"
-            >Do you have any existing loans?
+            >{{ "existingLoansLabel" | translateAsync }}
           </label>
           <div class="float-right">
             <label class="switch">
@@ -61,17 +75,17 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="existingEMI" class="font-size-sm mb-0"
-            >EMI on existing loan (optional)</label
-          >
+          <label for="existingEMI" class="font-size-sm mb-0">{{
+            "emiexistingLoansLabel" | translateAsync
+          }}</label>
           <input
             type="text"
             class="form-control-custom"
             id="existingEMI"
             name="existingEMI"
-            value="{{ existingEMI  | currency:'INR':'symbol':'2.0-0' }}"
+            value="{{ existingEMI | currency: 'INR':'symbol':'2.0-0' }}"
             [(ngModel)]="existingEMI"
-            placeholder="{{ '15000' | currency:'INR':'symbol':'2.0-0' }}"
+            placeholder="{{ '15000' | currency: 'INR':'symbol':'2.0-0' }}"
             digitOnly
           />
         </div>
@@ -81,11 +95,23 @@
   <div class="align-self-center loan-details ml-1 w-50">
     <div class="card bg-brand">
       <div class="card-body text-light text-center px-1">
-        <div class="loan-text mt-4 font-size-sm">Loan Amount</div>
-        <div class="font-size-lg font-weight-bold">{{ "100000" | currency:'INR':'symbol':'2.0-0' }}</div>
-        <div class="font-size-sm loan-text mt-3">Your EMI available</div>
-        <div class="font-size-lg font-weight-bold">{{ "15000" | currency:'INR':'symbol':'2.0-0' }}</div>
-        <button class="btn btn-light font-size-sm font-weight-bold mb-4 mt-4 text-brand">GET MONEY</button>
+        <div class="loan-text mt-4 font-size-sm">
+          {{ "loanAmountLabel" | translateAsync }}
+        </div>
+        <div class="font-size-lg font-weight-bold">
+          {{ "100000" | currency: "INR":"symbol":"2.0-0" }}
+        </div>
+        <div class="font-size-sm loan-text mt-3">
+          {{ "availableEMILabel" | translateAsync }}
+        </div>
+        <div class="font-size-lg font-weight-bold">
+          {{ "15000" | currency: "INR":"symbol":"2.0-0" }}
+        </div>
+        <button
+          class="btn btn-light font-size-sm font-weight-bold mb-4 mt-4 text-brand"
+        >
+          GET MONEY
+        </button>
       </div>
     </div>
   </div>

@@ -169,6 +169,7 @@ export class DigitOnlyDirective implements OnChanges {
   // end stack overflow code
 
   private sanitizeInput(input: string): string {
+    console.log(input)
     let result = "";
     if (this.decimal && this.isValidDecimal(input)) {
       const regex = new RegExp(`[^0-9${this.decimalSeparator}]`, "g");

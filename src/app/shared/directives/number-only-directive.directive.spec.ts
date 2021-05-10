@@ -1,7 +1,7 @@
 import { Component, DebugElement } from "@angular/core";
 import { ComponentFixture, TestBed, waitForAsync } from "@angular/core/testing";
 import { By } from "@angular/platform-browser";
-import { DigitOnlyDirective } from "./number-only-directive";
+import { DigitOnlyDirective } from "./number-only-directive.directive";
 
 @Component({
   template: `<input type="text" digitOnly />`,
@@ -23,13 +23,21 @@ describe("Directive: DigitOnlyDirective", () => {
   });
 
   it("hovering over input", () => {
-    inputEl.triggerEventHandler("keydown", {e: 'k'});
+    inputEl.triggerEventHandler("keydown", { e: "k" });
+    inputEl.triggerEventHandler("keyup", { e: "k" });
+    document.execCommand("copy");
+    document.execCommand("paste");
+    inputEl.nativeNode.min = 4;
+    inputEl.nativeNode.pattern = 4;
     fixture.detectChanges();
-    // expect(inputEl.nativeElement.style.backgroundColor).toBe("blue");
+    inputEl.nativeNode.min = 10;
+    fixture.detectChanges();
+    document.execCommand("drop");
 
-    inputEl.triggerEventHandler("keyup", {ctrlKey: true});
+    console.log(inputEl.nativeNode.min);
+    inputEl.triggerEventHandler("paste", { e: "k" });
+    inputEl.triggerEventHandler("drop", { e: "k" });
+
     fixture.detectChanges();
-    // console.log(inputEl.nativeElement.style.backgroundColor);
-    // expect(inputEl.nativeElement.style.backgroundColor).toBe("inherit");
   });
 });
