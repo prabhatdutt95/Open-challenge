@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## SnapshotS
 
-![snapshot](https://github.com/prabhatdutt95/admin-dashboard/blob/main/src/assets/screenshots/desktop.PNG?raw=true)
+![snapshot](https://github.com/prabhatdutt95/open-challenge/blob/main/src/assets/screenshots/desktop.PNG?raw=true)
 
 ## Development server
 
