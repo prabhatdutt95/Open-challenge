@@ -21,7 +21,8 @@ export class EligibilityFormComponent implements OnInit {
     value: 50000,
     min: 10000,
   };
-  existingEMI;
+  existingEMI = '';
+  comaRegexp = new RegExp(/\,/g);
 
   constructor(@Inject(L10N_LOCALE) public locale: L10nLocale) {}
 

@@ -83,9 +83,9 @@
             class="form-control-custom"
             id="existingEMI"
             name="existingEMI"
-            value="{{ existingEMI | currency: 'INR':'symbol':'2.0-0' }}"
+            value="{{ existingEMI.replace('₹', '').replace(comaRegexp, '') | currency: 'INR':'symbol':'1.0-0' }}"
             [(ngModel)]="existingEMI"
-            placeholder="{{ '15000' | currency: 'INR':'symbol':'2.0-0' }}"
+            placeholder="{{ '15000' | currency: 'INR':'symbol':'1.0-0' }}"
             digitOnly
           />
         </div>
