@@ -1,6 +1,13 @@
-# AngularTemplate
+# Open Loans
+## EMI Calculator app using Angular 11
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12
+
+[Deployed Demo](https://open-loans.surge.sh/)
+
+## SnapshotS
+
+![snapshot](https://github.com/prabhatdutt95/admin-dashboard/blob/main/src/assets/screenshots/desktop.PNG?raw=true)
 
 ## Development server
 
@@ -13,10 +20,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
 
