@@ -20,6 +20,7 @@ export class EligibilityFormComponent implements OnInit {
   expenseDetails = {
     value: 50000,
     min: 10000,
+    max: 100000
   };
   existingEMI = '';
   comaRegexp = new RegExp(/\,/g);
